@@ -1,0 +1,249 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SettingsActivity" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.39" >
+
+        <TableRow
+            android:id="@+id/tableRow34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/timeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current time:"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/timeEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberSigned" />
+
+            <Button
+                android:id="@+id/getTimeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/refLocationTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reference location:"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/refLocationEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/getRefLocationButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/seaPressureTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current local sea-level pressure:"
+                android:textSize="10sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/seaPressureEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal" >
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/standardPressureButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Use Standard"
+                android:textSize="8sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current pressure at reference:"
+                android:textSize="10sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/refPressureEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <Button
+                android:id="@+id/getRefPressureButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/refAltitudeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Altitude at reference:"
+                android:textSize="10sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/refAltitudeEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <Button
+                android:id="@+id/getRefAltitudeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/declinationTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Geomagnetic declination at reference:"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/refDeclinationEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <Button
+                android:id="@+id/getRefDeclinationButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/saveChangesButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Save Changes" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

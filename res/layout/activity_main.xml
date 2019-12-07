@@ -1,0 +1,456 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1" >
+
+        <TableRow
+            android:id="@+id/tableRow01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/gpsLocationTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:text="(long. , lat. , alt., acc.)"
+                android:textSize="9sp" />
+
+            <EditText
+                android:id="@+id/gpsLocationEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textSize="12sp" >
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/barometerTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:text="(kpa , bar. alt.)"
+                android:textSize="9sp" />
+
+            <EditText
+                android:id="@+id/barometerEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow09"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/displacementTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:text="(dx,dy,dz)"
+                android:textSize="9sp" />
+
+            <EditText
+                android:id="@+id/displacementEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textSize="9sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/buildingNumTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:text="Building Number"
+                android:textSize="9sp" />
+
+            <EditText
+                android:id="@+id/buildingNumEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:visibility="visible" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/velocityTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="(vx,vy,vz)"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/velocityEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow07"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/seaPressureTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="(ax,ay,az)"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/accelerationEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/deviceAccelerationTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="dev. (ax,day,daz)"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/deviceAccelerationEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow06"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/deviceGravityTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="dev. (gx,gy,gz)"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/deviceGravityEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/magnetoTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="dev. (mx,my,mz)"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/deviceMagnetoEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow08"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/deviceCoordinatesTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="right, front, up"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/deviceCoordinatesEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textSize="8sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/roomNumTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:text="@string/room_num"
+                android:textSize="9sp" />
+
+            <EditText
+                android:id="@+id/roomNumEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:visibility="visible" >
+
+                <requestFocus />
+                <requestFocus />
+
+            </EditText>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/locationTypeTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:text="Location Type"
+                android:textSize="9sp" />
+
+            <EditText
+                android:id="@+id/locationTypeEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:visibility="visible" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/locationNameTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:text="Location Name"
+                android:textSize="9sp" />
+
+            <EditText
+                android:id="@+id/locationNameEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:visibility="visible" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left" >
+
+            <TextView
+                android:id="@+id/stepCountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:text="Step Count"
+                android:textSize="9sp" />
+
+            <EditText
+                android:id="@+id/stepCountEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="none"
+                android:textSize="12sp" >
+
+            </EditText>
+        </TableRow>
+
+    </TableLayout>
+
+    <TableRow
+        android:id="@+id/tableRow26"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/viewButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.015"
+            android:text="View" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="Save" />
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.01"
+            android:text="Reset" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/minusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/plusButton"
+            style="android:buttonBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.045"
+            android:minWidth="50dip"
+            android:scrollHorizontally="false"
+            android:text="+"
+            android:textSize="15sp"
+            android:visibility="visible" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <CheckBox
+            android:id="@+id/gpsCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="GPS"
+            android:textSize="6sp" />
+
+        <CheckBox
+            android:id="@+id/sensorsCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|start"
+            android:text="Sensors"
+            android:textSize="6sp" />
+
+        <CheckBox
+            android:id="@+id/gyroAssistCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Gyro\nAssist"
+            android:textSize="6sp" />
+
+        <CheckBox
+            android:id="@+id/noInclinationCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Ignore \nIncl."
+            android:textSize="6sp"
+            android:visibility="visible" />
+
+        <CheckBox
+            android:id="@+id/distanceModeCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Distance\nMode"
+            android:textSize="6sp" />
+
+    </TableRow>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Wikiverse</string>
+    <string name="action_settings">Settings</string>
+    <string name="longitude">Longitude</string>
+    <string name="altitude">Altitude</string>
+    <string name="room_num">Room Number</string>
+    <string name="latitude">Latitude</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="get_gps">GPS</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="bar_altitude">Bar. Altitude</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_browse">BrowseActivity</string>
+    <string name="title_activity_add_edit">AddEditActivity</string>
+    <string name="title_activity_argl">ARGLActivity</string>
+
+</resources>

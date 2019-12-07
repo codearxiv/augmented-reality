@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fourColumnTableRow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/columnEntry30TextView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_weight="0.1"
+        android:paddingLeft="3dp"
+        android:paddingRight="1dp"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/columnEntry31TextView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_weight="0.1"
+        android:paddingLeft="3dp"
+        android:paddingRight="1dp"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/columnEntry32TextView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_weight="0.1"
+        android:paddingLeft="3dp"
+        android:paddingRight="1dp"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/columnEntry33TextView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="1dp"
+        android:layout_weight="0.1"
+        android:paddingLeft="3dp"
+        android:textSize="12sp" />
+
+</TableRow>
